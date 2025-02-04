@@ -23,7 +23,7 @@ const Execution = ({ title, desc1, desc2, desc3, desc4, images}) => {
   return (
       <div className='w-[90%]  mx-auto flex justify-between items-center gap-3 flex-col md:flex-row shape1 '>
 
-          <div className="left  p-5  w-full md:w-[50%]">
+          <div className="left  p-5  w-full md:w-[50%]" data-aos="zoom-in">
               <p className='text-blue uppercase font-semibold  my-2 text-[16px]'>{title}</p>
               <h1 className='text-5xl  text-main capitalize font-semibold '>{desc1}</h1>
               <p className='font-semibold my-3 text-main'>{desc2}</p>
@@ -90,7 +90,7 @@ const Execution = ({ title, desc1, desc2, desc3, desc4, images}) => {
               {images?.imageTwo && <img src={images?.imageTwo} alt="" className=' w-[130px] h-[130px] object-cover  absolute  z-10 top-[50px] right-[50px]' />}
             
               {/* this is  big image  */}
-              {images?.imageThree  &&<img src={images?.imageThree} alt="" className='absolute object-cover bottom-[120px] w-[400px] h-[450px] left-[40px]  rounded-[20px] p-4' />}
+              {images?.imageThree && <img data-aos="zoom-in" src={images?.imageThree} alt="" className='absolute object-cover bottom-[120px] w-[400px] h-[450px] left-[40px]  rounded-[20px] p-4' />}
           </div>
       </div>
   )

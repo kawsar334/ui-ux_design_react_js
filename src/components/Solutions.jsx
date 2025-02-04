@@ -29,7 +29,7 @@ const Solutions = () => {
 
           <div className='flex justify-center items-center flex-col md:flex-row flex-wrap gap-3  w-full  '>
             {items.map((item, index) => (
-                <div key={index} className='flex flex-col gap-3 w-[99%] md:w-[45%] lg:w-[31%] shadow p-4 rounded '>
+              <div data-aos="zoom-in" key={index} className='flex flex-col gap-3 w-[99%] md:w-[45%] lg:w-[31%] shadow p-4 rounded '>
                 <h2 className=' font-semibold text-3xl'>{item.title}</h2>
                 <img src={item.img} alt={item.title} className='w-[100px] object-cover rounded-full'/>
                 <p>{item.desc}</p>

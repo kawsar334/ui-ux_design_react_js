@@ -51,6 +51,7 @@ const Slider = () => {
                                 src={slide.src}
                                 className=" w-full lg:w-[50%] h-[190px] lg:h-[400px] object-cover rounded-[30px]"
                                 alt={slide.title}
+                                data-aos="zoom-in"
                             />
                             <div className=" text-center shadow     text-gray-700 p-2 rounded-md w-full lg:w-[45%]">
                                 <h2 className="text-lg font-bold text-left  text-blue uppercase">{slide.title}</h2>

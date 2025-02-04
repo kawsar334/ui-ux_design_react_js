@@ -33,7 +33,7 @@ const Technology = () => {
     return (
         <div>
 
-            <div className='w-[90%] my-5 mx-auto text-center'>
+            <div className='w-[90%] my-5 mx-auto text-center' data-aos="zoom-in">
                 <p className='text-xl text-blue'>TECHNOLOGY BUILT FOR YOU</p>
                 <h1 className='text-3xl md:text-4xl lg:text-6xl'>The future of finance</h1>
             </div>

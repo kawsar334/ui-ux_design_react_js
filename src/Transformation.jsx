@@ -2,7 +2,9 @@ import React from 'react'
 
 const Transformation = () => {
   return (
-      <div className='w-[95%] md:w-[80%] my-10 p-5 py-10 bg-blue mx-auto rounded-[30px] flex justify-between items-center gap-5  flex-col  md:flex-row  '>
+      <div
+      data-aos="zoom-in"
+      className='w-[95%] md:w-[80%] my-10 p-5 py-10 bg-blue mx-auto rounded-[30px] flex justify-between items-center gap-5  flex-col  md:flex-row  '>
 
 
         <div className='flex justify-between text-white gap-5 flex-col w-full md:w-[70%] 

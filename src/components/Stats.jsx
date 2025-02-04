@@ -39,7 +39,7 @@ const StatCard = ({ title, count }) => {
 const Stats = () => {
     return (
 
-        <div className="w-full">
+        <div className="w-full" data-aos="zoom-in">
             <div className="flex justify-center items-center gap-4 flex-col w-[80%] mx-auto my-10">
 
                 <h1 className="text-blue">TRUSTED BY THE BEST</h1>

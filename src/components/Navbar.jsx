@@ -1,9 +1,14 @@
 import React, { useState } from 'react'
 import logo from "../assets/logo.png"
-import { NavLink } from 'react-router-dom';
+import mee from "../assets/mee.png"
+
+import { NavLink, useLocation } from 'react-router-dom';
 
 
 const Navbar = () => {
+
+  const location = useLocation().pathname
+  
 
     const [open,setOpen] =useState(false);
     const handleToggle = () => {
@@ -13,7 +18,7 @@ const Navbar = () => {
 
 
   return (
-      <div className='px-5  fixed w-full  top-0 left-0   bg-blue firefox:bg-opacity-0 backdrop-blur-[2px]  bg-opacity-30  py-3 flex justify-between items-center  text-white z-50 '>
+      <div className={`px-5  fixed w-full  top-0 left-0    bg-blue firefox:bg-opacity-0 backdrop-blur-[2px]  bg-opacity-30  py-3 flex justify-between items-center  text-white z-50 `}>
       <div className="w-[90%] mx-auto flex justify-between items-center  relative ">
               <NavLink to="/" > 
                 <img className="w-[100px] h-[25px] " src={logo} alt="Logo" />
@@ -30,7 +35,7 @@ const Navbar = () => {
                   </li>
                   <li className='px-4 md:px-2 py-2 transition-all duration-500  hover:border-b  '><NavLink to="/services" >Services</NavLink></li>
                   <li className='px-4 md:px-2 py-2 transition-all duration-500  hover:border-b  '><NavLink to="/about"  >About Us</NavLink></li>
-                  <li className='px-4 md:px-2 py-2 block my-2 w-max border rounded text-center  md:hidden'>
+          <li className='px-4 md:px-2 py-2 block my-2 w-max border rounded text-center  md:hidden bg-[#f38754] '>
                     <NavLink to='/contact' className=' rounded'>Contact us</NavLink>
                   </li>
                   <li className="dropdown dropdown-bottom ">
@@ -45,7 +50,11 @@ const Navbar = () => {
                       </ul>
                   </li>
               </ul>
-          <NavLink className='border px-2   rounded hidden md:flex py-2  cursor-pointer  ' to='/contact'>Contact us</NavLink>
+        <NavLink to="/contact" className='border px-2 bg-[#f38754] hover:bg-white hover:text-[#f38754]  transition-all duration-500  rounded hidden md:flex py-2  cursor-pointer  ' >Contact us</NavLink>
+
+        <a href="https://kawsarfiroz2.netlify.app/" target='_blank' className=' cursor-pointer' >
+          <img src={mee} alt="" className='w-10 h-10 rounded-full border-2 bg-[#f38754]' />
+        </a>
       </div>
           <button className='text-2xl md:hidden' onClick={handleToggle}>
          {!open? <i className="fa fa-bars"></i>:

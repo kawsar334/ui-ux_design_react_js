@@ -19,25 +19,12 @@ const Svg=()=>{
 }
 const Consult = ({title,desc1,desc2,desc3,images}) => {
 
-    // const consultInfo = {
-    //     title: "Taking the First Step",
-        
-    //     desc1: "Consult",
-    //     desc2: "Taking the leap towards digital transformation with the ambition of delivering augmented value in financial services can be daunting.",
-    //     desc3: "Tap on the vast experience and deep knowledge of our experts. Our breadth of consulting expertise spans from applying the latest financial technological innovations to implementing risk-control strategies.",
-    //     desc4: "We provide a comprehensive overview of the key areas of digital transformation, offering a tailored approach that aligns with your needs and goals.",
-    //     images:{
-    //         imgOne:"https://cdn.sanity.io/images/6jywt20u/production/3fb880ac9df2bd6b2d7697f850118b858d842476-356x368.png?w=320&auto=format",
-    //         imgTwo: "https://cdn.sanity.io/images/6jywt20u/production/bc217eefe37b614acbffcb924052e0a35c55b4eb-162x182.svg?w=162&auto=format",
-    //         imgThree: "https://cdn.sanity.io/images/6jywt20u/production/75de4e417de603ce210bea0f109e45a9e37d9a23-1206x816.png?w=640&auto=format",
 
-    //     }
-    // }
 
   return (
-      <div className='w-[90%]  mx-auto flex justify-between items-center gap-3 flex-col md:flex-row shape1 '>
+      <div className='w-[90%]  mx-auto flex justify-between items-center gap-3 flex-col md:flex-row shape1 ' >
 
-          <div className="left  p-5  w-full md:w-[50%]">
+          <div className="left  p-5  w-full md:w-[50%]" data-aos="zoom-in">
               <p className='text-blue uppercase font-semibold  my-2 text-[16px]'>{title}</p>
               <h1 className='text-5xl  text-main capitalize font-semibold '>{desc1}</h1>
               <p className='font-semibold my-3 text-main'>{desc2}</p>

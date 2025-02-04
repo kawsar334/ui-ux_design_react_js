@@ -8,42 +8,42 @@ import WaveLinesMobile1 from './backgroundSVG/WaveLinesMobile1';
 import WaveLinesMobile2 from './backgroundSVG/WaveLinesMobile2';
 import WaveLinesDesktop4 from './backgroundSVG/WaveLinesDesktop4';
 
-const ServicesBanner = ({title, desc, desc2}) => {
-   
+const ServicesBanner = ({ title, desc, desc2 }) => {
+
     return (
-        <div className='w-screen  h-screen shape1 relative   overflow-hidden   bg-blue text-white '>
+        <div className='w-screen  h-screen shape1 relative   overflow-hidden   bg-blue text-white ' >
 
             <div className='w-full h-full  relative    '>
-            <Navbar />
-            <div className='absolute top-0 z-[1]    '>
+                <Navbar />
+                <div className='absolute top-0 z-[1]    '>
                     <WaveLinesDesktop4 />
-            </div>
-
-                <div className='absolute top-0  overflow-hidden   z-[1] h-[100%] md:h-full w-full md:w-[50%] flex justify-center items-center gap-2 flex-col'>
-                   
-                   <div className='h-max mt-[80px]  px-5 w-[90%]   md:w-[70%] md:space-y-3     '>
-                        <p className='uppercase  text-titlecolor font-semibold'>{title}</p>
-                        <h1 className='text-4xl md:text-6xl font-semibold'>{desc}</h1>
-                        <p>{desc2}</p>
-                   </div>
                 </div>
 
-             
+                <div className='absolute top-0  overflow-hidden   z-[1] h-[100%] md:h-full w-full md:w-[50%] flex justify-center items-center gap-2 flex-col'>
+
+                    <div className='h-max mt-[80px]  px-5 w-[90%]   md:w-[70%] md:space-y-3     '>
+                        <p className='uppercase  text-titlecolor font-semibold' data-aos="zoom-in">{title}</p>
+                        <h1 className='text-4xl md:text-6xl font-semibold' data-aos="zoom-in">{desc}</h1>
+                        <p data-aos="zoom-in">{desc2}</p>
+                    </div>
+                </div>
+
+
                 <div className='md:w-full h-full     absolute  right-[-100px]  hidden md:flex'>
-                   
-                   <div className='relative w-full   '>
+
+                    <div className='relative w-full   '>
                         <div className='   absolute right-[-400px] top-[-210px]  '>
-                            <WaveLinesDesktop4/>
+                            <WaveLinesDesktop4 />
+                        </div>
+
                     </div>
 
-                   </div>
+                </div>
 
             </div>
 
-            </div>
 
 
-           
         </div>
     )
 }

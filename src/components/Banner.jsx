@@ -51,15 +51,3 @@ const Banner = () => {
 
 export default Banner
 
-
-
-{/* <div className=' shape2 flex justify-between items-center  relative z-10 top-[-100px] w-[85%] bg-red-500  h-screen'>
-              <div className='absolute top-[-10px] opacity-50 '>
-                    <WaveLinesDesktop3 />
-              </div>
-           
-                <div className='w-[45%] bg-[gray] absolute top-0 z-[100] shape3'>
-                    <img
-                        src="https://cdn.sanity.io/images/6jywt20u/production/5ca8af1a922b106b962c34781483bc8e6e066688-1124x1364.png?w=640&auto=format" alt="" className='w-full ' />
-                </div>
-            </div> */}

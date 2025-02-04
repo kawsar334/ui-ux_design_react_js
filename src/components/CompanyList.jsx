@@ -17,10 +17,10 @@ const images = [
 
 const CompanyList = () => {
     return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-4" data-aos="zoom-in">
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {images.map((src, index) => (
-                    <div key={index} className="overflow-hidden p-2 md:p-4 rounded-lg   ">
+                    <div data-aos="zoom-in" key={index} className="overflow-hidden p-2 md:p-4 rounded-lg   ">
                         <img src={src} alt={`Image ${index + 1}`} className="w-[200px] h-[70px] object-cover" />
                     </div>
                 ))}

@@ -1,7 +1,5 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-
-// import times from "lodash/times";
 const images = [
     "https://cdn.sanity.io/images/6jywt20u/production/67ef6d224529c5521d5d38b4ac18521f589865d9-603x414.png?w=320&fm=webp",
     "https://cdn.sanity.io/images/6jywt20u/production/9c57a834d791df3ba5062693e0cf60cc879f46da-2560x768.png?w=320&fm=webp",
@@ -32,6 +30,7 @@ const Marque = () => {
                                 src={src}
                                 alt={`Slide ${index + 1}`}
                                 className="w-[200px] h-[70px] mx-10  object-cover rounded-lg shadow-lg"
+                                data-aos="zoom-in"
                             />
                         ))}
                     </Marquee>

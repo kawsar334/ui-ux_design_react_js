@@ -9,7 +9,7 @@ const Philoshophy = () => {
         { title: 'Cutting-edge tech', description: 'We seamlessly combine cutting-edge technologies, resulting in an unparalleled fintech experience for financial institutions.', img:"https://cdn.sanity.io/images/6jywt20u/production/1966d94a29ffe1673fd510327ba0eb409f82b680-50x50.svg?w=50&auto=format" },
     ]
   return (
-      <div className=' flex justify-center items-center flex-col'>
+    <div className=' flex justify-center items-center flex-col' data-aos="zoom-in">
 
         <div className='w-[90%] mx-auto flex justify-center items-center gap-3 flex-col  my-10 '>
               <p className='text-blue font-semibold'>OUR PHILOSOPHY</p>
